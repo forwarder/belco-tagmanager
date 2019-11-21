@@ -1,3 +1,8 @@
+---
+title: Google Tag Manager example
+layout: belco
+---
+
 ## Google Tag Manager integration example for Belco
 
 This page shows an example how to use Belco in Google Tag Manager and how to sync data using Data layers.
