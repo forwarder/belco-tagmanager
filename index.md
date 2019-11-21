@@ -7,17 +7,20 @@ layout: belco
 
 - Log in at https://tagmanager.google.com/ and go to your workspace.
 - Go to **Variables** and create new custom variable
-Use these settings:
-**Name**:Belco *(The name is case sensitive)*
+- Use these settings:
+
+**Name**: Belco *(The name is case sensitive)*
 **Variable Type**: Data Layer Variable
 **Data Variable Name**: belco
 - Save the configuration
 
 - Now create a new tag and name it Belco.
-Use these settings:
+- Use these settings:
+
 **Name**: Belco
 **Type**: Custom HTML
-Paste the following code:
+
+- Paste the following code:
 ```html
 <script>
 !function(n,o){var e=window.belcoFunction||"Belco";window[e]||(window[e]=function(n){if(void 0===window[e][n])throw new Error("Unknown method");return window[e][n].apply(window[e],Array.prototype.slice.call(arguments,1))}),window[e]._q=[];for(var i=["init","sync","track","page","open","close","toggle","on","once","off","anonymousId","customer","reset","sendMessage"],t=function(n){return function(){var o=Array.prototype.slice.call(arguments);return o.unshift(n),window[e]._q.push(o),window[e]}},w=0;w<i.length;w++){var r=i[w];window[e][r]=t(r)}window[e].load=function(e){if(!n.getElementById("belco-js")){var i=n.createElement(o);i.async=!0,i.id="belco-js",i.type="text/javascript",i.src="//cdn.belco.io/v2/widget.js",i.onload=function(n){"function"==typeof e&&e(n)};var t=n.getElementsByTagName(o)[0];t.parentNode.insertBefore(i,t)}},window.belcoConfig&&window[e].load(function(){window[e]("init",window.belcoConfig)})}(document,"script");
@@ -37,7 +40,6 @@ Paste the following code:
 - Add the **Page view** trigger to load the widget on page load.
 - Save the new tag and head over to the next step.
 
-...
 
 ### Using Data layers
 
@@ -80,7 +82,6 @@ https://developers.belco.io/docs/javascript-client
 </head>
 ```
 
-...
 
 ### Support or Contact
 
