@@ -27,7 +27,7 @@ layout: belco
 </script>
 <script>
   Belco.load(function() {
-    var config = \{{Belco\}};
+    var config = {% raw %}{{Belco}}{% endraw %};
              
     if (config) {
       Belco.init(config)
@@ -35,7 +35,7 @@ layout: belco
   })
 </script>
 ```
-  Note the \{{Belco\}} tag, there is the variable we just created.
+  Note the {% raw %}{{Belco\}}{% endraw %} tag, there is the variable we just created.
   
 - Add the **Page view** trigger to load the widget on page load.
 - Save the new tag and head over to the next step.
